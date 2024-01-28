@@ -41,7 +41,7 @@ const quotes = [
     document.body.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
   }
   
-  function shareOnTwitter() {
+  function shareOnX() {
     const currentQuote = document.querySelector('.neon .text').textContent;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(currentQuote)}`;
     window.open(twitterUrl, '_blank');
