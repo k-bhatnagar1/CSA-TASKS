@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
   <title>Random Quote Generator</title>
 </head>
+<body style="background-image: url('https://bit.ly/495rjje');">
 
-<body>
-
-  <div id="quote-container" onclick="getRandomQuote()">
-    <div id="quote-text">
-      <div class="neon">
-        <span class="text" data-text="Your Quote Here">Your Quote Here</span>
-        <span class="gradient"></span>
-        <span class="spotlight"></span>
-      </div>
+<div id="quote-container" onclick="getRandomQuote()">
+  <div id="quote-text">
+    <div class="neon">
+      <span class="text" data-text="Your Quote Here">Your Quote Here</span>
+      <span class="gradient"></span>
+      <span class="spotlight"></span>
     </div>
-    <button id="new-quote-btn" class="btn btn-primary" onclick="getRandomQuote()">New Quote</button>
-    <a id="share-btn" href="#" class="btn btn-info" onclick="shareOnTwitter()">
-      <i class="fab fa-twitter"></i> Share on X
-    </a>
   </div>
+  <button id="new-quote-btn" class="btn btn-primary" onclick="getRandomQuote()">New Quote</button>
+  <a id="share-btn" href="#" class="btn btn-info" onclick="shareOnX()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+      <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+    </svg> Share on X
+  </a>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
 
 
